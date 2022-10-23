@@ -1,0 +1,5 @@
+Base path: 'C:/Program Files/Unity/Hub/Editor/2021.3.7f1/Editor/Data', plugins path 'C:/Program Files/Unity/Hub/Editor/2021.3.7f1/Editor/Data/PlaybackEngines'
+Cmd: initializeCompiler
+
+Cmd: compileSnippet
+  insize=8339 file=Assets/Shader Graphs/TerrainShader pass=ShadowCaster cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=1
