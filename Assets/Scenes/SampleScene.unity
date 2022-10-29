@@ -190,7 +190,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 291931390}
-  m_Mesh: {fileID: 1786526184}
+  m_Mesh: {fileID: 1506540081}
 --- !u!4 &291931393
 Transform:
   m_ObjectHideFlags: 0
@@ -481,7 +481,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!43 &1786526184
+--- !u!43 &1506540081
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -707,7 +707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drawMode: 2
-  levelOfDetail: 2
+  editorPreviewLOD: 0
   noiseScale: 22.6
   octaves: 4
   persistance: 0.501
@@ -822,6 +822,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c3e2c8efb8775842ad9333a0d015bee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  detailLevels:
+  - lod: 0
+    visibleDstThreshold: 200
+  - lod: 4
+    visibleDstThreshold: 400
+  - lod: 6
+    visibleDstThreshold: 600
   viewer: {fileID: 305996448}
   mapMaterial: {fileID: 2100000, guid: 2f8596fd2198ee044adc7efea289af9c, type: 2}
 --- !u!1 &2071542323
