@@ -11,6 +11,9 @@ public class UpdatableDataEditor : Editor
         base.OnInspectorGUI();
         UpdatableData data = (UpdatableData) target;
 
-        if(GUILayout.Button("Update")) data.NotifyOfUpdatedValues();
+        if(GUILayout.Button("Update")){
+            data.NotifyOfUpdatedValues();
+            EditorUtility.SetDirty(target);
+        }
     }
 }

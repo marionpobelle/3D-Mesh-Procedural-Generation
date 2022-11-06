@@ -20,3 +20,4 @@ public class MapDisplay : MonoBehaviour
         meshFilter.transform.localScale = Vector3.one * FindObjectOfType<MapGenerator>().terrainData.uniformScale;
     }
 }
+
