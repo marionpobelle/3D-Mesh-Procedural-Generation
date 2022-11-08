@@ -15,17 +15,32 @@ public class MapGenerator : MonoBehaviour {
 
 	public Material terrainMaterial;
 
-	public const int mapChunkSize = 239;
+	public bool useFlatShading;
+
 	[Range(0,6)]
 	public int editorPreviewLOD;
 
 	public bool autoUpdate;
+
+	static MapGenerator instance;
 
 	Queue<MapThreadInfo<MapData>> mapDataThreadInfoQueue = new Queue<MapThreadInfo<MapData>>();
 	Queue<MapThreadInfo<MeshData>> meshDataThreadInfoQueue = new Queue<MapThreadInfo<MeshData>>();
 
 	void Awake(){
 		textureData.UpdateMeshHeights(terrainMaterial, terrainData.minHeight, terrainData.maxHeight);
+
+	}
+
+	public static int mapChunkSize{
+		get{
+			if(instance == null) instance = FindObjectOfType<MapGenerator>();
+			if(instance.useFlatShading){
+				return 95;
+			}else{
+				return 239;
+			}
+		}
 	}
 
 	void OnValuesUpdated(){
@@ -43,7 +58,7 @@ public class MapGenerator : MonoBehaviour {
 		if (drawMode == DrawMode.NoiseMap) {
 			display.DrawTexture (TextureGenerator.TextureFromHeightMap (mapData.heightMap));
 		}else if (drawMode == DrawMode.Mesh) {
-			display.DrawMesh (MeshGenerator.GenerateTerrainMesh (mapData.heightMap, terrainData.meshHeightMultiplier, terrainData.meshHeightCurve, editorPreviewLOD));
+			display.DrawMesh (MeshGenerator.GenerateTerrainMesh (mapData.heightMap, terrainData.meshHeightMultiplier, terrainData.meshHeightCurve, editorPreviewLOD, useFlatShading));
 		}
 	}
 
@@ -71,7 +86,7 @@ public class MapGenerator : MonoBehaviour {
 	}
 
 	void MeshDataThread(MapData mapData, int lod, Action<MeshData> callback) {
-		MeshData meshData = MeshGenerator.GenerateTerrainMesh (mapData.heightMap, terrainData.meshHeightMultiplier, terrainData.meshHeightCurve, lod);
+		MeshData meshData = MeshGenerator.GenerateTerrainMesh (mapData.heightMap, terrainData.meshHeightMultiplier, terrainData.meshHeightCurve, lod, useFlatShading);
 		lock (meshDataThreadInfoQueue) {
 			meshDataThreadInfoQueue.Enqueue (new MapThreadInfo<MeshData> (callback, meshData));
 		}

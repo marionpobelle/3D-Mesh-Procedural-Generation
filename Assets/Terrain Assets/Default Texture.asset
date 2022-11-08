@@ -16,8 +16,8 @@ MonoBehaviour:
   baseColours:
   - {r: 1, g: 0, b: 0, a: 0}
   - {r: 0, g: 0.10866976, b: 1, a: 0}
-  - {r: 0.86051476, g: 1, b: 0, a: 0}
+  - {r: 0.92608213, g: 1, b: 0.4764151, a: 0}
   baseStartHeights:
   - 0
   - 0.05
-  - 0.21
+  - 0.1
