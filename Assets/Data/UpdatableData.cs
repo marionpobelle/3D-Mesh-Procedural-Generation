@@ -16,10 +16,11 @@ public class UpdatableData : ScriptableObject
             UnityEditor.EditorApplication.update += NotifyOfUpdatedValues;
         }
     }
-    #endif
 
     public void NotifyOfUpdatedValues(){
         UnityEditor.EditorApplication.update -= NotifyOfUpdatedValues;
         if(OnValuesUpdated != null) OnValuesUpdated();
     }
+
+    #endif
 }

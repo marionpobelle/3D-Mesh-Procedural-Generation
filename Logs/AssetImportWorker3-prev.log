@@ -1,0 +1,331 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.7f1 (24e8595d6d43) revision 2418777'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'en' Physical Memory: 32698 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.7f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+C:/Users/Marion/Documents/UNITY/Projects/TrashpandaLikesFlowers
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+64369
+Successfully changed project path to: C:/Users/Marion/Documents/UNITY/Projects/TrashpandaLikesFlowers
+C:/Users/Marion/Documents/UNITY/Projects/TrashpandaLikesFlowers
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 95.97 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.7f1 (24e8595d6d43)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Marion/Documents/UNITY/Projects/TrashpandaLikesFlowers/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3080 (ID=0x2216)
+    Vendor:   NVIDIA
+    VRAM:     10078 MB
+    Driver:   30.0.15.1215
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.7f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56944
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.7f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006732 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 82.69 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.496 seconds
+Domain Reload Profiling:
+	ReloadAssembly (497ms)
+		BeginReloadAssembly (61ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (353ms)
+			LoadAssemblies (59ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (69ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (18ms)
+			SetupLoadedEditorAssemblies (227ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (83ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (101ms)
+				ProcessInitializeOnLoadMethodAttributes (35ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.007177 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Marion\Documents\UNITY\Projects\TrashpandaLikesFlowers\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Marion\Documents\UNITY\Projects\TrashpandaLikesFlowers\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 81.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.019 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1019ms)
+		BeginReloadAssembly (86ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (847ms)
+			LoadAssemblies (71ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (200ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (493ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (82ms)
+				BeforeProcessingInitializeOnLoad (105ms)
+				ProcessInitializeOnLoadAttributes (215ms)
+				ProcessInitializeOnLoadMethodAttributes (77ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 1.04 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5116 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 37 unused Assets / (0.7 MB). Loaded Objects now: 5572.
+Memory consumption went from 199.7 MB to 199.0 MB.
+Total: 3.198000 ms (FindLiveObjects: 0.333500 ms CreateObjectMapping: 0.132400 ms MarkObjects: 2.438200 ms  DeleteObjects: 0.293100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 23767.285400 seconds.
+  path: Assets/Flat Textures Pack/Textures/Summer_Roses 1.png
+  artifactKey: Guid(ea4232951fa65de40ad53d3e717490ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Summer_Roses 1.png using Guid(ea4232951fa65de40ad53d3e717490ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '005e347d70fbf1a3f132b9144b118faf') in 0.092877 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.668645 seconds.
+  path: Assets/Flat Textures Pack/Textures/Summer_Wall 1.png
+  artifactKey: Guid(1716356242ba24043b706c1a6b361ab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Summer_Wall 1.png using Guid(1716356242ba24043b706c1a6b361ab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '848af1cba385d5905e13f4773cf3a29b') in 0.021660 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Flat Textures Pack/Textures/Water_C 5.png
+  artifactKey: Guid(b1eea3dea8744b848b02cb217e88860a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Water_C 5.png using Guid(b1eea3dea8744b848b02cb217e88860a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68f0e191c0366a8449c589ee3d8af7e8') in 0.013856 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Flat Textures Pack/Textures/Water_D 2.png
+  artifactKey: Guid(76e7799dc694c004b8dc5d9680d13a15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Water_D 2.png using Guid(76e7799dc694c004b8dc5d9680d13a15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '039e1149119e6517317030c3a44d883f') in 0.012090 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Flat Textures Pack/Textures/Water_B 2.png
+  artifactKey: Guid(e29a49a1ec99453458082401b5b03c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Water_B 2.png using Guid(e29a49a1ec99453458082401b5b03c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af1500069489f39b326bd578358a60a3') in 0.013725 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Flat Textures Pack/Textures/Water_D 1.png
+  artifactKey: Guid(f3d0eac17e434b648942014b76d68b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Water_D 1.png using Guid(f3d0eac17e434b648942014b76d68b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28a73364632db2769470387494cbf7ed') in 0.011621 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.348489 seconds.
+  path: Assets/Flat Textures Pack/Textures/Winter_Cracked_Ice_C 1.png
+  artifactKey: Guid(200b70222bcfebc4389f3b4403d436a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Winter_Cracked_Ice_C 1.png using Guid(200b70222bcfebc4389f3b4403d436a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8990f565af82a9098ea67c2fbfd89765') in 0.018584 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Flat Textures Pack/Textures/Winter_FrozenGround 2.png
+  artifactKey: Guid(e09c642d4bc4ee84f83c33a6e543cfc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Winter_FrozenGround 2.png using Guid(e09c642d4bc4ee84f83c33a6e543cfc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4da9775ee56f34592d67902d7aebfd0b') in 0.012525 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.018702 seconds.
+  path: Assets/Flat Textures Pack/Textures/Winter_Ice_Cracked_A 2.png
+  artifactKey: Guid(4df39bffb5946c747bca037e9c647f2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Winter_Ice_Cracked_A 2.png using Guid(4df39bffb5946c747bca037e9c647f2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ab24286b2feb245ed2494ed51c633bb') in 0.020267 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Flat Textures Pack/Textures/Winter_Snow_B 2.png
+  artifactKey: Guid(fbe5534272ac37d45aec8abe42f56cf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Winter_Snow_B 2.png using Guid(fbe5534272ac37d45aec8abe42f56cf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c66f4e8648686ca14ac48f535b86eb0') in 0.013609 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Flat Textures Pack/Textures/Winter_Spores 2.png
+  artifactKey: Guid(46accfdd277051e4c9d072fd5dea6d30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Winter_Spores 2.png using Guid(46accfdd277051e4c9d072fd5dea6d30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6c6b9b36dce8810e3cd0e694870202e') in 0.016418 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Flat Textures Pack/Textures/Winter_Wall 1.png
+  artifactKey: Guid(43208dcc0f5c58549b9a97b93abf30f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Winter_Wall 1.png using Guid(43208dcc0f5c58549b9a97b93abf30f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '392f1d05c57dafac6e71a7cdb75f3da1') in 0.013218 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Flat Textures Pack/Textures/Winter_Roots 1.png
+  artifactKey: Guid(e645f922bebfe874aa7c20375c342d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Winter_Roots 1.png using Guid(e645f922bebfe874aa7c20375c342d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a95fc2df2420eddb83b5a53d46d9e3c') in 0.012038 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006506 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Marion\Documents\UNITY\Projects\TrashpandaLikesFlowers\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Marion\Documents\UNITY\Projects\TrashpandaLikesFlowers\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.07 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.036 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1037ms)
+		BeginReloadAssembly (143ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (51ms)
+		EndReloadAssembly (806ms)
+			LoadAssemblies (87ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (249ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (396ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (90ms)
+				ProcessInitializeOnLoadAttributes (207ms)
+				ProcessInitializeOnLoadMethodAttributes (75ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.76 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5040 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 30 unused Assets / (0.7 MB). Loaded Objects now: 5577.
+Memory consumption went from 192.9 MB to 192.2 MB.
+Total: 3.645400 ms (FindLiveObjects: 0.576100 ms CreateObjectMapping: 0.147100 ms MarkObjects: 2.598400 ms  DeleteObjects: 0.322900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 68.860449 seconds.
+  path: Assets/Flat Textures Pack/Textures/Winter_ChunkyIce 4.png
+  artifactKey: Guid(65f4505532a52fb4bb6f39433c413750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Winter_ChunkyIce 4.png using Guid(65f4505532a52fb4bb6f39433c413750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cb69a56004c48647e79d4cda9aea4d1') in 0.054512 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Flat Textures Pack/Textures/Winter_Flower 5.png
+  artifactKey: Guid(aa8fc014a72e3284ca66b33b94b839a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Winter_Flower 5.png using Guid(aa8fc014a72e3284ca66b33b94b839a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b38d702631fbfc4962f49ed067ad3b9') in 0.012451 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Flat Textures Pack/Textures/Winter_Cracked_Ice_C 3.png
+  artifactKey: Guid(f023654861eb87b44837fce2d04b581c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Winter_Cracked_Ice_C 3.png using Guid(f023654861eb87b44837fce2d04b581c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5faa8be07c423075a33b91856c9fc9de') in 0.012932 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Flat Textures Pack/Textures/Winter_FrozenGround 2.png
+  artifactKey: Guid(0db63af7bbf8dac4bb41b57da5c3289b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Winter_FrozenGround 2.png using Guid(0db63af7bbf8dac4bb41b57da5c3289b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61a7be5b76c77211d34c4494cfc858e3') in 0.011656 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Flat Textures Pack/Textures/Winter_Flower 3.png
+  artifactKey: Guid(0317f74d672574d49ac9ab1035323c08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Winter_Flower 3.png using Guid(0317f74d672574d49ac9ab1035323c08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aff989ef3b3a3bbc03c1f7362aa0dd4d') in 0.010920 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

@@ -15,7 +15,7 @@ C:/Users/Marion/Documents/UNITY/Projects/TrashpandaLikesFlowers
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-50178
+64369
 Successfully changed project path to: C:/Users/Marion/Documents/UNITY/Projects/TrashpandaLikesFlowers
 C:/Users/Marion/Documents/UNITY/Projects/TrashpandaLikesFlowers
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/Marion/Documents/UNITY/Projects/TrashpandaLikesFlowers
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 86.68 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 83.57 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.7f1 (24e8595d6d43)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.7f1/Editor/Data/Resources/UnitySubsystems
@@ -63,77 +63,77 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.7f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56336
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56860
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.7f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006920 seconds.
+Registered in 0.006679 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 84.41 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 85.75 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.488 seconds
+- Completed reload, in  0.493 seconds
 Domain Reload Profiling:
-	ReloadAssembly (489ms)
-		BeginReloadAssembly (53ms)
+	ReloadAssembly (493ms)
+		BeginReloadAssembly (55ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (352ms)
-			LoadAssemblies (51ms)
+		EndReloadAssembly (356ms)
+			LoadAssemblies (53ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (69ms)
+			SetupTypeCache (71ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (18ms)
-			SetupLoadedEditorAssemblies (226ms)
+			RebuildScriptCaches (19ms)
+			SetupLoadedEditorAssemblies (227ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (84ms)
+				RefreshPlugins (86ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (101ms)
-				ProcessInitializeOnLoadMethodAttributes (32ms)
+				ProcessInitializeOnLoadAttributes (100ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007460 seconds.
+Registered in 0.007120 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\Marion\Documents\UNITY\Projects\TrashpandaLikesFlowers\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Marion\Documents\UNITY\Projects\TrashpandaLikesFlowers\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 81.92 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 83.49 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.961 seconds
+- Completed reload, in  0.959 seconds
 Domain Reload Profiling:
-	ReloadAssembly (962ms)
-		BeginReloadAssembly (88ms)
+	ReloadAssembly (959ms)
+		BeginReloadAssembly (84ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (17ms)
-		EndReloadAssembly (790ms)
-			LoadAssemblies (71ms)
+		EndReloadAssembly (787ms)
+			LoadAssemblies (68ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (200ms)
+			SetupTypeCache (199ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (41ms)
-			SetupLoadedEditorAssemblies (444ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (446ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (82ms)
-				BeforeProcessingInitializeOnLoad (98ms)
-				ProcessInitializeOnLoadAttributes (188ms)
+				RefreshPlugins (84ms)
+				BeforeProcessingInitializeOnLoad (92ms)
+				ProcessInitializeOnLoadAttributes (194ms)
 				ProcessInitializeOnLoadMethodAttributes (63ms)
 				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
@@ -143,12 +143,12 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.96 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.01 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 5116 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 37 unused Assets / (0.7 MB). Loaded Objects now: 5572.
-Memory consumption went from 199.8 MB to 199.0 MB.
-Total: 3.122700 ms (FindLiveObjects: 0.345200 ms CreateObjectMapping: 0.132800 ms MarkObjects: 2.334300 ms  DeleteObjects: 0.309700 ms)
+Memory consumption went from 199.7 MB to 199.0 MB.
+Total: 3.161200 ms (FindLiveObjects: 0.344600 ms CreateObjectMapping: 0.168400 ms MarkObjects: 2.353000 ms  DeleteObjects: 0.294800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -160,3 +160,448 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 23706.991332 seconds.
+  path: Assets/Flat Textures Pack/Materials/Cave_Cracks.mat
+  artifactKey: Guid(7f61e96487dd8084480def67ee56f766) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Materials/Cave_Cracks.mat using Guid(7f61e96487dd8084480def67ee56f766) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e9608c88e53e4facdc5698543b5febb') in 0.170915 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Flat Textures Pack/Materials/Winter_Roots.mat
+  artifactKey: Guid(5c02dae6770af354d97ceaacb0dcfaa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Materials/Winter_Roots.mat using Guid(5c02dae6770af354d97ceaacb0dcfaa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c69a65a8ce495c7f2420cd073338909') in 0.012937 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Flat Textures Pack/Materials/Water_B.mat
+  artifactKey: Guid(077530e0b0a9273408ae4d17c1a1af03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Materials/Water_B.mat using Guid(077530e0b0a9273408ae4d17c1a1af03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaef125b59de8d6d6f5c3199a44c99c7') in 0.012161 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Flat Textures Pack/Materials/Forest_RiverPebbles.mat
+  artifactKey: Guid(33edbb19ee29c624ab5c9184c95c5f2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Materials/Forest_RiverPebbles.mat using Guid(33edbb19ee29c624ab5c9184c95c5f2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8500452c3ce4f8c6b9d46cc9681214f1') in 0.012331 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Flat Textures Pack/Materials/Summer_Flowers.mat
+  artifactKey: Guid(82b3a75aca7ed6f4abe443d8019d9ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Materials/Summer_Flowers.mat using Guid(82b3a75aca7ed6f4abe443d8019d9ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5866fff29e32463aa56df36a9f338a69') in 0.011959 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Flat Textures Pack/Materials/Winter_FrozenGround.mat
+  artifactKey: Guid(5fb072cb6bfc5e343be27f17187cefae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Materials/Winter_FrozenGround.mat using Guid(5fb072cb6bfc5e343be27f17187cefae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cab7d62bf693632c2c2be6989cc47e13') in 0.012772 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Flat Textures Pack/Materials/Cave_Crystal_A.mat
+  artifactKey: Guid(fb8cc1d727af6e14ab2449668683f343) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Materials/Cave_Crystal_A.mat using Guid(fb8cc1d727af6e14ab2449668683f343) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c6e3218074522b7600b8985bb853bfd') in 0.012438 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Flat Textures Pack/Materials/Winter_Moss.mat
+  artifactKey: Guid(d02623c81a030044cacb865f4ee28bd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Materials/Winter_Moss.mat using Guid(d02623c81a030044cacb865f4ee28bd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20e0679cc2bedae8b0ba6a84bb83469c') in 0.011798 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Flat Textures Pack/Materials/WInter_Snow_Rocks.mat
+  artifactKey: Guid(a080f7b6b977d1d478336b9f12f52fdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Materials/WInter_Snow_Rocks.mat using Guid(a080f7b6b977d1d478336b9f12f52fdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5bd0703310315beb93b8aab0d252b0c') in 0.011275 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Flat Textures Pack/Materials/Winter_Hardsnow.mat
+  artifactKey: Guid(447272d5916c0734a876cfbe785794c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Materials/Winter_Hardsnow.mat using Guid(447272d5916c0734a876cfbe785794c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6944e1b6f5ab20cb71126fc5d08f13c') in 0.010995 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Flat Textures Pack/Materials/Winter_Snow_B.mat
+  artifactKey: Guid(00494841d457c5e40beb347b6483f7c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Materials/Winter_Snow_B.mat using Guid(00494841d457c5e40beb347b6483f7c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd98526d208248314f316dd063fff439e') in 0.014529 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Flat Textures Pack/Materials/Winter_ChunkyIce.mat
+  artifactKey: Guid(5f0995ce430fd1745a585b6cfe9c2ca9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Materials/Winter_ChunkyIce.mat using Guid(5f0995ce430fd1745a585b6cfe9c2ca9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64098f1c789fba54881c6b463f65feb3') in 0.011973 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Flat Textures Pack/Materials/Water_D.mat
+  artifactKey: Guid(3584c50ec7d45f348a5aa57d24bb5737) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Materials/Water_D.mat using Guid(3584c50ec7d45f348a5aa57d24bb5737) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c8326240f2e4abb8990bdd54733d377') in 0.012387 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Flat Textures Pack/Materials/Winter_IceCave.mat
+  artifactKey: Guid(9b56e06f8d3f8584597ec8a11bd1f200) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Materials/Winter_IceCave.mat using Guid(9b56e06f8d3f8584597ec8a11bd1f200) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b1478f106c3be57bf08fd877755b2a0') in 0.013581 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Flat Textures Pack/Materials/Desert_Bushes.mat
+  artifactKey: Guid(a08dad81b78f42e489c9703efc2c1fb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Materials/Desert_Bushes.mat using Guid(a08dad81b78f42e489c9703efc2c1fb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0da684e06f90a1ced8ec83ed6ed2f2cd') in 0.010184 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Flat Textures Pack/Materials/Water_C.mat
+  artifactKey: Guid(aca82f8a42433894199632974fbd0681) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Materials/Water_C.mat using Guid(aca82f8a42433894199632974fbd0681) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6024f4766df2add58679397910290a0') in 0.012305 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Flat Textures Pack/Materials/Winter_IceCliff.mat
+  artifactKey: Guid(41b973d990ff1c748a4f9a7c29998342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Materials/Winter_IceCliff.mat using Guid(41b973d990ff1c748a4f9a7c29998342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b73933bfc7f0f3df16c495504d9f4f87') in 0.011226 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Flat Textures Pack/Materials/Summer_Roots.mat
+  artifactKey: Guid(2a81fb5b4c7ffd34a86add061bd2f815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Materials/Summer_Roots.mat using Guid(2a81fb5b4c7ffd34a86add061bd2f815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d7fadbb1403949dd4552cd5bfec61d7') in 0.012648 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Flat Textures Pack/Materials/Cave_FireGround.mat
+  artifactKey: Guid(058595cb07ad23946a0a151be620489b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Materials/Cave_FireGround.mat using Guid(058595cb07ad23946a0a151be620489b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f0f7699bf5c1f503e1a15fea872a420') in 0.011510 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Flat Textures Pack/Materials/Summer_Moss.mat
+  artifactKey: Guid(ee8af93f6543af1418cb59d1c38e78be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Materials/Summer_Moss.mat using Guid(ee8af93f6543af1418cb59d1c38e78be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2361077d95475908aa513b6482713d9') in 0.015170 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Flat Textures Pack/Materials/Desert_CracedMud.mat
+  artifactKey: Guid(9c499f1f265a28748a3f4ccecb05c8c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Materials/Desert_CracedMud.mat using Guid(9c499f1f265a28748a3f4ccecb05c8c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09d2d09e41b86aac35ff6cf893b3fc75') in 0.011234 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Flat Textures Pack/Materials/Summer_Mud_B.mat
+  artifactKey: Guid(b4ce1486c4e3c83408feacc4d7497b0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Materials/Summer_Mud_B.mat using Guid(b4ce1486c4e3c83408feacc4d7497b0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cc0b11301a15360c154c3fce050a273') in 0.011889 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Flat Textures Pack/Materials/Winter_Ice_Cracked_A.mat
+  artifactKey: Guid(261ce03210dba03488d4c264cc8d0528) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Materials/Winter_Ice_Cracked_A.mat using Guid(261ce03210dba03488d4c264cc8d0528) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c20771c104ea86eb46bd2594914f652b') in 0.011340 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.069047 seconds.
+  path: Assets/Flat Textures Pack/Textures/Cave_Cracks.png
+  artifactKey: Guid(a2cd67599aa6c4749a6d6dae988081e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Cave_Cracks.png using Guid(a2cd67599aa6c4749a6d6dae988081e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e0bb493f9031e7c53c598ba03f06c7c') in 0.039673 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Flat Textures Pack/Textures/Cave_Crystal_A.png
+  artifactKey: Guid(44574b134f468f746bb51c8099e9fddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Cave_Crystal_A.png using Guid(44574b134f468f746bb51c8099e9fddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7129c08e9aef70b736e1695f3eb9a414') in 0.010417 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Flat Textures Pack/Textures/Winter_Hardsnow.png
+  artifactKey: Guid(fe04479d93e6897438d3c2856a88b89e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Winter_Hardsnow.png using Guid(fe04479d93e6897438d3c2856a88b89e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c18ff240c9118f2ff4d63190f7bf4ced') in 0.011319 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Flat Textures Pack/Textures/Summer_RiverPebbles.png
+  artifactKey: Guid(0850fbb36b5346249a2687f29aa97e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Summer_RiverPebbles.png using Guid(0850fbb36b5346249a2687f29aa97e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '671bc578a506d38d9416269164f70305') in 0.010995 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Flat Textures Pack/Textures/Summer_CrackedRock.png
+  artifactKey: Guid(29b952018edebb44ca66eeedaa2411c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Summer_CrackedRock.png using Guid(29b952018edebb44ca66eeedaa2411c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8fdf302cb08a9c6842c2b964f393d3b') in 0.011787 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Flat Textures Pack/Textures/Winter_Snow_B.png
+  artifactKey: Guid(1a96f8a365e354b408b073050647357f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Winter_Snow_B.png using Guid(1a96f8a365e354b408b073050647357f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '482db393eb7c57247c18d38309238bac') in 0.010138 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Flat Textures Pack/Textures/Cave_FireGround.png
+  artifactKey: Guid(2c3a68b4404445e44bff84d1bb91c1f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Cave_FireGround.png using Guid(2c3a68b4404445e44bff84d1bb91c1f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e31ba26d4ee9c7f7c8fc97e70598e2e2') in 0.009218 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Flat Textures Pack/Textures/Cave_Spores.png
+  artifactKey: Guid(9289c7337ada4bc45959b4ff82b1b784) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Cave_Spores.png using Guid(9289c7337ada4bc45959b4ff82b1b784) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1296c49c426cb8e4432c11295a88148') in 0.009376 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Flat Textures Pack/Textures/Summer_Roots.png
+  artifactKey: Guid(9160bb514caa5e641a0fc34cd91ce0f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Summer_Roots.png using Guid(9160bb514caa5e641a0fc34cd91ce0f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6004cabce28d031bdfd8b6cc8381ee1c') in 0.010986 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Flat Textures Pack/Textures/Summer_Dirt_A.png
+  artifactKey: Guid(14833b0b08b0a6945b0dd4f86360fe01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Summer_Dirt_A.png using Guid(14833b0b08b0a6945b0dd4f86360fe01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91761e14504bad7ac0d1607299c4df1d') in 0.010206 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Flat Textures Pack/Textures/Summer_Roses.png
+  artifactKey: Guid(330b1e96b6c1f3445ba9f4133e803a71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Summer_Roses.png using Guid(330b1e96b6c1f3445ba9f4133e803a71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae97b4c86318d3c16414500713e675ea') in 0.012225 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Flat Textures Pack/Textures/Winter_Bush.png
+  artifactKey: Guid(3afbbf99dc4ba9847ba9e53b8942903c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Winter_Bush.png using Guid(3afbbf99dc4ba9847ba9e53b8942903c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fb30333c5b4616fa2930492117436ba') in 0.010567 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Flat Textures Pack/Textures/Cave_Magma_B.png
+  artifactKey: Guid(f3f73fae8b0080b4b8c78a03d205b2e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Cave_Magma_B.png using Guid(f3f73fae8b0080b4b8c78a03d205b2e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f53989310df3d475964eb467b46b020') in 0.011273 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Flat Textures Pack/Textures/Desert_Tiles.png
+  artifactKey: Guid(7ff4f34c25ccd794ca7398e9f4492282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Desert_Tiles.png using Guid(7ff4f34c25ccd794ca7398e9f4492282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b04b2db5ba8bbf08d3cf6b6077c7ea4') in 0.012289 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Flat Textures Pack/Textures/Winter_FrozenGround.png
+  artifactKey: Guid(e2acd3ed2fb446544a34b648341c93fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Winter_FrozenGround.png using Guid(e2acd3ed2fb446544a34b648341c93fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '686e108af626a4dcbda61e82a669ad16') in 0.010181 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Flat Textures Pack/Textures/Winter_Roots.png
+  artifactKey: Guid(ee21d21f61e8ae747979d6c7242ab8f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Winter_Roots.png using Guid(ee21d21f61e8ae747979d6c7242ab8f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03bec8ee2afd403257bf4f232fdd9432') in 0.012400 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Flat Textures Pack/Textures/Desert_Sand.png
+  artifactKey: Guid(06114477b9be4c649a45f9fc21dc00c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Desert_Sand.png using Guid(06114477b9be4c649a45f9fc21dc00c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0eb3336bbde20fc1e505d41e28d2c95') in 0.011971 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Flat Textures Pack/Textures/Water_A.png
+  artifactKey: Guid(1946cf558a9d27644a68c2e335ae6df7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Water_A.png using Guid(1946cf558a9d27644a68c2e335ae6df7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e2487aa8be5f78fb6fbf295ad897ffe') in 0.011328 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Flat Textures Pack/Textures/Water_D.png
+  artifactKey: Guid(60cabeb742477d54fbe159e9061f335d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Water_D.png using Guid(60cabeb742477d54fbe159e9061f335d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '981fad0b802714bb3ccd41780f4ac656') in 0.010624 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Flat Textures Pack/Textures/Desert_Sand_B.png
+  artifactKey: Guid(970ad6b6e3accb640a4bb916a1034bd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Desert_Sand_B.png using Guid(970ad6b6e3accb640a4bb916a1034bd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2c5f593e63b56c3c3fc41f0c80d2e34') in 0.012590 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Flat Textures Pack/Textures/Winter_IceCave.png
+  artifactKey: Guid(4a3e8f1cd37ac564f8f0c0a80b080c37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Winter_IceCave.png using Guid(4a3e8f1cd37ac564f8f0c0a80b080c37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24255bce4df5b591cbc1e85cdd4f455b') in 0.013643 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Flat Textures Pack/Textures/Cave_Magma.png
+  artifactKey: Guid(d028d237290dff545b1ac2636948f0a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Cave_Magma.png using Guid(d028d237290dff545b1ac2636948f0a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea1b03b7295b6593c8ac7ce85b8558e7') in 0.011288 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Flat Textures Pack/Textures/Cave_LavaRocks_A.png
+  artifactKey: Guid(a36ddfdef00715d48be4ba9fb4e538ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Cave_LavaRocks_A.png using Guid(a36ddfdef00715d48be4ba9fb4e538ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa1e918a184efa511967bbd08823d121') in 0.011134 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Flat Textures Pack/Textures/Winter_IceCliff.png
+  artifactKey: Guid(e9f0a30aa83fca9418d176218fd919b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Winter_IceCliff.png using Guid(e9f0a30aa83fca9418d176218fd919b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21163622eccaa62f6e9f2484eb260cc1') in 0.011311 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Flat Textures Pack/Textures/Desert_Cliff.png
+  artifactKey: Guid(f19def3b08a4bf34da11bd34756ee17f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Desert_Cliff.png using Guid(f19def3b08a4bf34da11bd34756ee17f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2f33cb8a4978e59f766a15d07e7e677') in 0.011245 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 57.143900 seconds.
+  path: Assets/Flat Textures Pack/Textures/Desert_Tiles 1.png
+  artifactKey: Guid(e88f70e7992d24641a8beb4cd8f414c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Desert_Tiles 1.png using Guid(e88f70e7992d24641a8beb4cd8f414c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1a8276dc425693b21c30b41129c2b5c') in 0.034092 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Flat Textures Pack/Textures/Water_B 1.png
+  artifactKey: Guid(327a8763696e18d47887a672bb3d5b19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Water_B 1.png using Guid(327a8763696e18d47887a672bb3d5b19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46eb00ca81c22aa1969a54ef06f7f80f') in 0.013431 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.708339 seconds.
+  path: Assets/Flat Textures Pack/Textures/Summer_Roses 2.png
+  artifactKey: Guid(5ab695e2039498948a7c51673dbd121a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Summer_Roses 2.png using Guid(5ab695e2039498948a7c51673dbd121a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '292e1b8fb0173d788b770dbbeaa447e8') in 0.048076 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Flat Textures Pack/Textures/Winter_Bush 2.png
+  artifactKey: Guid(6b75e65c68c30964eaca3b10f2a33943) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Winter_Bush 2.png using Guid(6b75e65c68c30964eaca3b10f2a33943) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77f2b656b1edb4bd2702bc6229c29ade') in 0.010967 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Flat Textures Pack/Textures/Water_C 2.png
+  artifactKey: Guid(93f1ea248ba758445943d7df47defae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Water_C 2.png using Guid(93f1ea248ba758445943d7df47defae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbb11aca6aa4d5516c72f7692b0dbf59') in 0.012908 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.363846 seconds.
+  path: Assets/Flat Textures Pack/Textures/Winter_ChunkyIce 2.png
+  artifactKey: Guid(aa5210ed1c1bda242b547f3490d99b6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Winter_ChunkyIce 2.png using Guid(aa5210ed1c1bda242b547f3490d99b6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8a14873b9e59f17ce4e8457bd0ed6d0') in 0.013052 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Flat Textures Pack/Textures/Winter_Flower 2.png
+  artifactKey: Guid(c97c28f7f84fe844dab6389aa5e2b601) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Winter_Flower 2.png using Guid(c97c28f7f84fe844dab6389aa5e2b601) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '584d45f30b2fc1ec5764139805e7c91b') in 0.012798 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.024460 seconds.
+  path: Assets/Flat Textures Pack/Textures/Winter_Ice_Cracked_A 1.png
+  artifactKey: Guid(94d1d0704ccb5c1408a690ba4c78e31d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Winter_Ice_Cracked_A 1.png using Guid(94d1d0704ccb5c1408a690ba4c78e31d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a418abf6db1632ca4debf38a07b3fb0') in 0.021056 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Flat Textures Pack/Textures/Winter_Moss 1.png
+  artifactKey: Guid(6993448ed38a0a74299be75896e1ab73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Winter_Moss 1.png using Guid(6993448ed38a0a74299be75896e1ab73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2524609f30e05b94760e01c33114f880') in 0.012856 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Flat Textures Pack/Textures/Winter_Roots 2.png
+  artifactKey: Guid(72f547f4edcae3d419610b6cd62df658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Winter_Roots 2.png using Guid(72f547f4edcae3d419610b6cd62df658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e950a0cd87b4890da668d3c71fade96') in 0.015926 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Flat Textures Pack/Textures/Winter_Wall 2.png
+  artifactKey: Guid(272a57a8c0645dd4a9e416f81ffce782) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Winter_Wall 2.png using Guid(272a57a8c0645dd4a9e416f81ffce782) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f65f987a686d412acf4878a91980f1c8') in 0.013379 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Flat Textures Pack/Textures/Winter_IceCliff 2.png
+  artifactKey: Guid(f6185cf32b939b54b882dcfb52bf5366) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Winter_IceCliff 2.png using Guid(f6185cf32b939b54b882dcfb52bf5366) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2dc86c64c9f6a6887c25483702689d5') in 0.011718 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009718 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Marion\Documents\UNITY\Projects\TrashpandaLikesFlowers\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Marion\Documents\UNITY\Projects\TrashpandaLikesFlowers\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.09 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.031 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1031ms)
+		BeginReloadAssembly (141ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (48ms)
+		EndReloadAssembly (805ms)
+			LoadAssemblies (92ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (250ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (393ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (89ms)
+				ProcessInitializeOnLoadAttributes (205ms)
+				ProcessInitializeOnLoadMethodAttributes (75ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.37 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5040 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 30 unused Assets / (0.7 MB). Loaded Objects now: 5617.
+Memory consumption went from 197.8 MB to 197.1 MB.
+Total: 3.344600 ms (FindLiveObjects: 0.346900 ms CreateObjectMapping: 0.154300 ms MarkObjects: 2.546000 ms  DeleteObjects: 0.296800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 68.860730 seconds.
+  path: Assets/Flat Textures Pack/Textures/Winter_ChunkyIce 3.png
+  artifactKey: Guid(7c5a925845d13664587757755040339b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Winter_ChunkyIce 3.png using Guid(7c5a925845d13664587757755040339b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '740ec9c7eb2834fbb02229d8e28d42e4') in 0.054004 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Flat Textures Pack/Textures/Winter_Cracked_Ice_C 4.png
+  artifactKey: Guid(6f605d14915a3a843aa70f81187d86a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Winter_Cracked_Ice_C 4.png using Guid(6f605d14915a3a843aa70f81187d86a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd891adcb6fe586471d86ae3aa18cfb87') in 0.012763 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Flat Textures Pack/Textures/Winter_Cracked_Ice_C 5.png
+  artifactKey: Guid(c66e3cc62a7a45641abe4aa1ac36a565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Winter_Cracked_Ice_C 5.png using Guid(c66e3cc62a7a45641abe4aa1ac36a565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85644443971bced02974a24b3c178eff') in 0.013106 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Flat Textures Pack/Textures/Winter_Flower 4.png
+  artifactKey: Guid(f192d606f45cd694fa832058267569e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flat Textures Pack/Textures/Winter_Flower 4.png using Guid(f192d606f45cd694fa832058267569e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dbc99622c0972e31034163b366ea89e') in 0.012547 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
