@@ -16,16 +16,15 @@ public static class TextureGenerator
         return texture;
     }
 
-    public static Texture2D TextureFromHeightMap(float[,] heightMap){
+    public static Texture2D TextureFromHeightMap(HeightMap heightMap){
         //Width and Height of the noisemap
-        int width = heightMap.GetLength(0);
-        int height = heightMap.GetLength(1);
+        int width = heightMap.values.GetLength(0);
+        int height = heightMap.values.GetLength(1);
         //Set the color of each pixel
         Color[] colourMap = new Color[width * height];
         for(int y = 0; y < height; y++){
             for(int x = 0; x < width; x++){
-                colourMap[y * width + x] = Color.Lerp(Color.black, Color.white, heightMap[x,y]);
-            }
+                colourMap [y * width + x] = Color.Lerp (Color.black, Color.white, Mathf.InverseLerp(heightMap.minValue,heightMap.maxValue,heightMap.values [x, y]));            }
         }
         return TextureFromColourMap(colourMap, width, height);
     }
