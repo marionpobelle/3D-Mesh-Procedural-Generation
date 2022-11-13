@@ -7,6 +7,7 @@ public class TerrainGenerator : MonoBehaviour {
 	const float viewerMoveThresholdForChunkUpdate = 25f;
 	const float sqrViewerMoveThresholdForChunkUpdate = viewerMoveThresholdForChunkUpdate * viewerMoveThresholdForChunkUpdate;
 
+
 	public int colliderLODIndex;
 	public LODInfo[] detailLevels;
 
@@ -70,10 +71,10 @@ public class TerrainGenerator : MonoBehaviour {
 					if (terrainChunkDictionary.ContainsKey (viewedChunkCoord)) {
 						terrainChunkDictionary [viewedChunkCoord].UpdateTerrainChunk ();
 					} else {
-						TerrainChunk newChunk = new TerrainChunk (viewedChunkCoord, heightMapSettings, meshSettings, detailLevels, colliderLODIndex, transform, viewer, mapMaterial);
+						TerrainChunk newChunk = new TerrainChunk (viewedChunkCoord,heightMapSettings,meshSettings, detailLevels, colliderLODIndex, transform, viewer, mapMaterial);
 						terrainChunkDictionary.Add (viewedChunkCoord, newChunk);
 						newChunk.onVisibilityChanged += OnTerrainChunkVisibilityChanged;
-						newChunk.Load();
+						newChunk.Load ();
 					}
 				}
 
@@ -81,27 +82,27 @@ public class TerrainGenerator : MonoBehaviour {
 		}
 	}
 
-	void OnTerrainChunkVisibilityChanged(TerrainChunk chunk, bool isVisible){
-		if(isVisible){
-			visibleTerrainChunks.Add(chunk);
-		}else{
-			visibleTerrainChunks.Remove(chunk);
+	void OnTerrainChunkVisibilityChanged(TerrainChunk chunk, bool isVisible) {
+		if (isVisible) {
+			visibleTerrainChunks.Add (chunk);
+		} else {
+			visibleTerrainChunks.Remove (chunk);
 		}
 	}
 
 }
 
 [System.Serializable]
-	public struct LODInfo {
-		[Range(0,MeshSettings.numSupportedLODs-1)]
-		public int lod;
-		public float visibleDstThreshold;
+public struct LODInfo {
+	[Range(0,MeshSettings.numSupportedLODs-1)]
+	public int lod;
+	public float visibleDstThreshold;
 
 
-		public float sqrVisibleDstThreshold {
-			get {
-				return visibleDstThreshold * visibleDstThreshold;
-			}
+	public float sqrVisibleDstThreshold {
+		get {
+			return visibleDstThreshold * visibleDstThreshold;
 		}
 	}
+}
 

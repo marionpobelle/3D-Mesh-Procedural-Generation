@@ -1,14 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
 
-public class MapPreview : MonoBehaviour
-{
-    public Renderer textureRender;
-    public MeshFilter meshFilter;
-    public MeshRenderer meshRenderer;
+public class MapPreview : MonoBehaviour {
 
-    public enum DrawMode {NoiseMap, Mesh};
+	public Renderer textureRender;
+	public MeshFilter meshFilter;
+	public MeshRenderer meshRenderer;
+
+
+	public enum DrawMode {NoiseMap, Mesh};
 	public DrawMode drawMode;
 
 	public MeshSettings meshSettings;
@@ -17,40 +17,49 @@ public class MapPreview : MonoBehaviour
 
 	public Material terrainMaterial;
 
+
+
 	[Range(0,MeshSettings.numSupportedLODs-1)]
 	public int editorPreviewLOD;
 	public bool autoUpdate;
 
+
+
+
 	public void DrawMapInEditor() {
-		textureData.ApplyToMaterial(terrainMaterial);
+		textureData.ApplyToMaterial (terrainMaterial);
 		textureData.UpdateMeshHeights (terrainMaterial, heightMapSettings.minHeight, heightMapSettings.maxHeight);
 		HeightMap heightMap = HeightMapGenerator.GenerateHeightMap (meshSettings.numVertsPerLine, meshSettings.numVertsPerLine, heightMapSettings, Vector2.zero);
 
 		if (drawMode == DrawMode.NoiseMap) {
 			DrawTexture (TextureGenerator.TextureFromHeightMap (heightMap));
 		} else if (drawMode == DrawMode.Mesh) {
-			DrawMesh (MeshGenerator.GenerateTerrainMesh (heightMap.values, meshSettings, editorPreviewLOD));
+			DrawMesh (MeshGenerator.GenerateTerrainMesh (heightMap.values,meshSettings, editorPreviewLOD));
 		}
 	}
 
-    public void DrawTexture(Texture2D texture){
-        //Apply texture to texture renderer
-        textureRender.sharedMaterial.mainTexture = texture;
-        textureRender.transform.localScale = new Vector3(texture.width, 1, texture.height) / 10f;
 
-        textureRender.gameObject.SetActive(true);
-        meshFilter.gameObject.SetActive(false);
-    }
 
-    public void DrawMesh(MeshData meshData){
-        //Shared in case we generate outside of gameMode
-        meshFilter.sharedMesh = meshData.CreateMesh();
 
-        textureRender.gameObject.SetActive(false);
-        meshFilter.gameObject.SetActive(true);
-    }
 
-    void OnValuesUpdated() {
+	public void DrawTexture(Texture2D texture) {
+		textureRender.sharedMaterial.mainTexture = texture;
+		textureRender.transform.localScale = new Vector3 (texture.width, 1, texture.height) /10f;
+
+		textureRender.gameObject.SetActive (true);
+		meshFilter.gameObject.SetActive (false);
+	}
+
+	public void DrawMesh(MeshData meshData) {
+		meshFilter.sharedMesh = meshData.CreateMesh ();
+
+		textureRender.gameObject.SetActive (false);
+		meshFilter.gameObject.SetActive (true);
+	}
+
+
+
+	void OnValuesUpdated() {
 		if (!Application.isPlaying) {
 			DrawMapInEditor ();
 		}
@@ -76,5 +85,6 @@ public class MapPreview : MonoBehaviour
 		}
 
 	}
+
 }
 
