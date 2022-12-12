@@ -30,7 +30,13 @@ public class TerrainChunk {
 
         Transform viewer;
 
-		public TerrainChunk(Vector2 coord, HeightMapSettings heightMapSettings, MeshSettings meshSettings, LODInfo[] detailLevels, int colliderLODIndex, Transform parent, Transform viewer, Material material) {
+		public Transform chunkTransform;
+
+		GameObject water;
+
+		GameObject waterPlaneAssociatedToChunk;
+
+		public TerrainChunk(Vector2 coord, HeightMapSettings heightMapSettings, MeshSettings meshSettings, LODInfo[] detailLevels, int colliderLODIndex, Transform parent, Transform viewer, Material material, GameObject water) {
 			this.coord = coord;
 			this.detailLevels = detailLevels;
 			this.colliderLODIndex = colliderLODIndex;
@@ -38,16 +44,18 @@ public class TerrainChunk {
 			this.meshSettings = meshSettings;
             this.viewer = viewer;
 
+			this.water = water;
+
 			sampleCentre = coord * meshSettings.meshWorldSize / meshSettings.meshScale;
 			Vector2 position = coord * meshSettings.meshWorldSize;
 			bounds = new Bounds(position, Vector2.one * meshSettings.meshWorldSize);
 
 			meshObject = new GameObject("Terrain Chunk");
+			this.chunkTransform = meshObject.transform;
 			meshRenderer = meshObject.AddComponent<MeshRenderer>();
 			meshFilter = meshObject.AddComponent<MeshFilter>();
 			meshCollider = meshObject.AddComponent<MeshCollider>();
 			meshRenderer.material = material;
-
 			meshObject.transform.position = new Vector3(position.x, 0, position.y);
 			meshObject.transform.parent = parent;
 			SetVisible(false);
@@ -67,6 +75,7 @@ public class TerrainChunk {
 
         public void Load() {
 		    ThreadedDataRequester.RequestData(() => HeightMapGenerator.GenerateHeightMap (meshSettings.numVertsPerLine, meshSettings.numVertsPerLine, heightMapSettings, sampleCentre), OnHeightMapReceived);
+			DrawWater(meshSettings);
 	    }
 
 		void OnHeightMapReceived(object heightMapObject) {
@@ -99,7 +108,6 @@ public class TerrainChunk {
 							break;
 						}
 					}
-
 					if (lodIndex != previousLODIndex) {
 						LODMesh lodMesh = lodMeshes [lodIndex];
 						if (lodMesh.hasMesh) {
@@ -109,7 +117,6 @@ public class TerrainChunk {
 							lodMesh.RequestMesh (heightMap, meshSettings, heightMapSettings);
 						}
 					}
-
 
 				}
 
@@ -129,13 +136,52 @@ public class TerrainChunk {
 				if (sqrDstFromViewerToEdge < detailLevels [colliderLODIndex].sqrVisibleDstThreshold) {
 					if (!lodMeshes [colliderLODIndex].hasRequestedMesh) {
 						lodMeshes [colliderLODIndex].RequestMesh (heightMap, meshSettings, heightMapSettings);
+						waterPlaneAssociatedToChunk.SetActive(true);
 					}
 				}
 
 				if (sqrDstFromViewerToEdge < colliderGenerationDistanceThreshold * colliderGenerationDistanceThreshold) {
 					if (lodMeshes [colliderLODIndex].hasMesh) {
 						meshCollider.sharedMesh = lodMeshes [colliderLODIndex].mesh;
+						waterPlaneAssociatedToChunk.SetActive(true);
 						hasSetCollider = true;
+					}
+				}
+			}
+		}
+
+		public void DrawWater(MeshSettings meshSettings){
+			/***Vector3 waterPosition = new Vector3(chunkTransform.localPosition.x, meshSettings.waterHeight, chunkTransform.localPosition.z);
+			GameObject clone = MonoBehaviour.Instantiate(water, waterPosition, Quaternion.identity);
+            clone.name = "WaterPlane";
+			clone.transform.parent = chunkTransform;
+			float waterSideLength = meshSettings.meshWorldSize;
+			clone.transform.localScale = new Vector3(waterSideLength / 10f, 1, waterSideLength / 10f);***/
+			Vector3 waterPosition = new Vector3(chunkTransform.localPosition.x, meshSettings.waterHeight, chunkTransform.localPosition.z);
+			this.waterPlaneAssociatedToChunk = MonoBehaviour.Instantiate(water, waterPosition, Quaternion.identity);
+            waterPlaneAssociatedToChunk.name = "WaterPlane";
+			waterPlaneAssociatedToChunk.transform.parent = chunkTransform;
+			float waterSideLength = meshSettings.meshWorldSize;
+			waterPlaneAssociatedToChunk.transform.localScale = new Vector3(waterSideLength / 10f, 1, waterSideLength / 10f);
+
+			waterPlaneAssociatedToChunk.SetActive(false);
+			if(hasSetCollider) waterPlaneAssociatedToChunk.SetActive(true);
+			UpdateWater();
+		}
+
+		void UpdateWater(){
+			if (!hasSetCollider) {
+				float sqrDstFromViewerToEdge = bounds.SqrDistance (viewerPosition);
+
+				if (sqrDstFromViewerToEdge < detailLevels [colliderLODIndex].sqrVisibleDstThreshold) {
+					if (!lodMeshes [colliderLODIndex].hasRequestedMesh) {
+						waterPlaneAssociatedToChunk.SetActive(true);
+					}
+				}
+
+				if (sqrDstFromViewerToEdge < colliderGenerationDistanceThreshold * colliderGenerationDistanceThreshold) {
+					if (lodMeshes [colliderLODIndex].hasMesh) {
+						waterPlaneAssociatedToChunk.SetActive(true);
 					}
 				}
 			}

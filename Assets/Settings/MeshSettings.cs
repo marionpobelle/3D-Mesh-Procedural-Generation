@@ -17,6 +17,7 @@ public class MeshSettings : UpdatableData {
 	[Range(0,numSupportedFlatshadedChunkSizes-1)]
 	public int flatshadedChunkSizeIndex;
 
+	public float waterHeight = 1.5f;
 
 	// num verts per line of mesh rendered at LOD = 0. Includes the 2 extra verts that are excluded from final mesh, but used for calculating normals
 	public int numVertsPerLine {

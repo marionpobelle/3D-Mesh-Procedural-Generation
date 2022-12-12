@@ -16,13 +16,11 @@ public class MapPreview : MonoBehaviour {
 
 	public Material terrainMaterial;
 
-	//Water
 	[SerializeField]
     private Transform water;
     public Transform Water { get { return water; } }
 
 	public Transform meshTransform;
-	//
 
 	[Range(0,MeshSettings.numSupportedLODs-1)]
 	public int editorPreviewLOD;
@@ -39,7 +37,7 @@ public class MapPreview : MonoBehaviour {
 			DrawTexture (TextureGenerator.TextureFromHeightMap (heightMap));
 		} else if (drawMode == DrawMode.Mesh) {
 			DrawMesh (MeshGenerator.GenerateTerrainMesh (heightMap.values, editorPreviewLOD, meshSettings, heightMapSettings));
-			DrawWater(meshSettings);
+			DrawWaterInEditor(meshSettings);
 		} else if (drawMode == DrawMode.FalloffMap) {
 			DrawTexture(TextureGenerator.TextureFromHeightMap(new HeightMap(FalloffGenerator.GenerateFalloffMap(meshSettings.numVertsPerLine), 0, 1)));
 		}
@@ -86,11 +84,11 @@ public class MapPreview : MonoBehaviour {
 		meshFilter.gameObject.SetActive(true);
 	}
 
-	public void DrawWater(MeshSettings meshSettings){
+	public void DrawWaterInEditor(MeshSettings meshSettings){
 		water.parent = meshTransform;
 		float waterSideLength = meshSettings.meshWorldSize;
 		water.localScale = new Vector3(waterSideLength / 10f, 1, waterSideLength / 10f);
-		water.localPosition = new Vector3(meshTransform.localPosition.x, 1.5f, meshTransform.localPosition.z);
+		water.localPosition = new Vector3(meshTransform.localPosition.x, meshSettings.waterHeight, meshTransform.localPosition.z);
 	}
 
 }

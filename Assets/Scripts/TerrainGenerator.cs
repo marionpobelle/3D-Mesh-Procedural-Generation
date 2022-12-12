@@ -9,12 +9,17 @@ public class TerrainGenerator : MonoBehaviour {
 	const float sqrViewerMoveThresholdForChunkUpdate = viewerMoveThresholdForChunkUpdate * viewerMoveThresholdForChunkUpdate;
 
 	public int colliderLODIndex;
+
 	public LODInfo[] detailLevels;
 
 	public MeshSettings meshSettings;
 	public HeightMapSettings heightMapSettings;
 
 	public Transform viewer;
+
+	[SerializeField]
+	public GameObject water;
+
 	public Material mapMaterial;
 
 	Vector2 viewerPosition;
@@ -40,6 +45,7 @@ public class TerrainGenerator : MonoBehaviour {
 		if(viewerPosition != viewerPositionOld){
 			foreach(TerrainChunk chunk in visibleTerrainChunks){
 				chunk.UpdateCollisionMesh();
+				//DrawWater(meshSettings,chunk);
 			}
 		}
 
@@ -66,7 +72,7 @@ public class TerrainGenerator : MonoBehaviour {
 					if (terrainChunkDictionary.ContainsKey (viewedChunkCoord)) {
 						terrainChunkDictionary [viewedChunkCoord].UpdateTerrainChunk ();
 					} else {
-						TerrainChunk newChunk = new TerrainChunk (viewedChunkCoord, heightMapSettings, meshSettings, detailLevels, colliderLODIndex, transform, viewer, mapMaterial);
+						TerrainChunk newChunk = new TerrainChunk (viewedChunkCoord, heightMapSettings, meshSettings, detailLevels, colliderLODIndex, transform, viewer, mapMaterial, water);
 						terrainChunkDictionary.Add (viewedChunkCoord, newChunk);
 						newChunk.onVisibilityChanged += OnTerrainChunkVisibilityChanged;
 						newChunk.Load();
@@ -82,8 +88,19 @@ public class TerrainGenerator : MonoBehaviour {
 			visibleTerrainChunks.Add (chunk);
 		} else {
 			visibleTerrainChunks.Remove (chunk);
+			
 		}
 	}
+
+	/***public void DrawWater(MeshSettings meshSettings, TerrainChunk chunk){
+			Transform chunkTransform = chunk.chunkTransform;
+			Vector3 waterPosition = new Vector3(chunkTransform.localPosition.x, meshSettings.waterHeight, chunkTransform.localPosition.z);
+			GameObject clone = Instantiate(water, waterPosition, Quaternion.identity);
+            clone.name = "WaterPlane";
+			clone.transform.parent = chunkTransform;
+			float waterSideLength = meshSettings.meshWorldSize;
+			clone.transform.localScale = new Vector3(waterSideLength / 10f, 1, waterSideLength / 10f);
+	}***/
 
 }
 

@@ -55,7 +55,7 @@ public static class MeshGenerator {
 						Debug.Log("hate");
 						Debug.Log("you");
 						Debug.Log("threads");
-						Debug.Log("but I'll learn to love you");
+						Debug.Log("Nothing to see here");
 
 					}
 					if (isEdgeConnectionVertex) {
