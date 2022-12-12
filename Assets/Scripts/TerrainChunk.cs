@@ -35,6 +35,8 @@ public class TerrainChunk {
 		GameObject water;
 
 		GameObject waterPlaneAssociatedToChunk;
+		//spawner stuff
+		ItemSpawner spawnerInstance;
 
 		public TerrainChunk(Vector2 coord, HeightMapSettings heightMapSettings, MeshSettings meshSettings, LODInfo[] detailLevels, int colliderLODIndex, Transform parent, Transform viewer, Material material, GameObject water) {
 			this.coord = coord;
@@ -47,6 +49,8 @@ public class TerrainChunk {
 			this.water = water;
 
 			sampleCentre = coord * meshSettings.meshWorldSize / meshSettings.meshScale;
+			//spawner stuff
+			spawnerInstance = GameObject.FindObjectOfType<ItemSpawner>();
 			Vector2 position = coord * meshSettings.meshWorldSize;
 			bounds = new Bounds(position, Vector2.one * meshSettings.meshWorldSize);
 
@@ -76,6 +80,7 @@ public class TerrainChunk {
         public void Load() {
 		    ThreadedDataRequester.RequestData(() => HeightMapGenerator.GenerateHeightMap (meshSettings.numVertsPerLine, meshSettings.numVertsPerLine, heightMapSettings, sampleCentre), OnHeightMapReceived);
 			DrawWater(meshSettings);
+			spawnerInstance.DrawItems(sampleCentre, chunkTransform);
 	    }
 
 		void OnHeightMapReceived(object heightMapObject) {

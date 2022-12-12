@@ -10,11 +10,13 @@ public class MapPreviewEditor : Editor {
 
 		if (DrawDefaultInspector ()) {
 			if (mapPreview.autoUpdate) {
+				mapPreview.NullifyChildren();
 				mapPreview.DrawMapInEditor ();
 			}
 		}
 
 		if (GUILayout.Button ("Generate")) {
+			mapPreview.NullifyChildren();
 			mapPreview.DrawMapInEditor ();
 		}
 	}

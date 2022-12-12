@@ -27,6 +27,8 @@ public class MapPreview : MonoBehaviour {
 
 	public bool autoUpdate;
 
+	public ItemSpawner spawnerInstance;
+
 	public void DrawMapInEditor() {
 		//textureData.ApplyToMaterial (terrainMaterial);
 		//textureData.UpdateMeshHeights (terrainMaterial, heightMapSettings.minHeight, heightMapSettings.maxHeight);
@@ -38,8 +40,17 @@ public class MapPreview : MonoBehaviour {
 		} else if (drawMode == DrawMode.Mesh) {
 			DrawMesh (MeshGenerator.GenerateTerrainMesh (heightMap.values, editorPreviewLOD, meshSettings, heightMapSettings));
 			DrawWaterInEditor(meshSettings);
+			spawnerInstance.DrawItems(Vector2.zero, this.transform);
 		} else if (drawMode == DrawMode.FalloffMap) {
 			DrawTexture(TextureGenerator.TextureFromHeightMap(new HeightMap(FalloffGenerator.GenerateFalloffMap(meshSettings.numVertsPerLine), 0, 1)));
+		}
+	}
+
+	public void NullifyChildren(){
+		foreach(Transform child in this.transform){
+			//child.transform.parent = null;
+			//Destroy(child.gameObject);
+			DestroyImmediate(this.gameObject.transform.GetChild(0).gameObject);
 		}
 	}
 
