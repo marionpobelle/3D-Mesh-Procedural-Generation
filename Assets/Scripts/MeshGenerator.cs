@@ -3,8 +3,10 @@ using System.Collections;
 
 public static class MeshGenerator {
 
-	
-
+	/***
+	Generates a mesh from a given heightMap and settings.
+	Sets the position, height and color, draws the triangles.
+	***/
 	public static MeshData GenerateTerrainMesh(float[,] heightMap, int levelOfDetail, MeshSettings meshSettings, HeightMapSettings heightMapSettings) {
 		int skipIncrement = (levelOfDetail == 0)?1:levelOfDetail * 2;
 		int numVertsPerLine = meshSettings.numVertsPerLine;
@@ -25,7 +27,7 @@ public static class MeshGenerator {
 				if (isOutOfMeshVertex) {
 					vertexIndicesMap [x, y] = outOfMeshVertexIndex;
 					outOfMeshVertexIndex--;
-				} else if(!isSkippedVertex){
+				} else if(!isSkippedVertex) {
 					vertexIndicesMap [x, y] = meshVertexIndex;
 					meshVertexIndex++;
 				}
@@ -36,7 +38,7 @@ public static class MeshGenerator {
 		for (int y = 0; y < numVertsPerLine; y ++) {
 			for (int x = 0; x < numVertsPerLine; x ++) {
 				bool isSkippedVertex = x > 2 && x < numVertsPerLine - 3 && y > 2 && y < numVertsPerLine - 3 && ((x - 2) % skipIncrement != 0 || (y - 2) % skipIncrement != 0);
-				if(!isSkippedVertex){
+				if(!isSkippedVertex) {
 
 					bool isOutOfMeshVertex = y == 0 || y == numVertsPerLine - 1 || x == 0 || x == numVertsPerLine - 1;
 					bool isMeshEdgeVertex = (y == 1 || y == numVertsPerLine - 2 || x == 1 || x == numVertsPerLine - 2) && !isOutOfMeshVertex;
@@ -50,12 +52,14 @@ public static class MeshGenerator {
 
 					float normalizedHeight = Mathf.InverseLerp(heightMapSettings.minHeight, heightMapSettings.maxHeight, height);
 					Color color = heightMapSettings.gradient.Evaluate(normalizedHeight);
-					if(normalizedHeight >= 1 || normalizedHeight <= 0){
+					if(normalizedHeight >= 1 || normalizedHeight <= 0) {
 						Debug.Log("I");
 						Debug.Log("hate");
 						Debug.Log("you");
 						Debug.Log("threads");
 						Debug.Log("Nothing to see here");
+						Debug.Log("There is no reason these prints are here");
+						Debug.Log("I swear");
 
 					}
 					if (isEdgeConnectionVertex) {
@@ -83,31 +87,37 @@ public static class MeshGenerator {
 						int d = vertexIndicesMap [x + currentIncrement, y + currentIncrement];
 						meshData.AddTriangle (a, d, c);
 						meshData.AddTriangle (d, a, b);
-					}
-					
+					}	
 				}
 			}
 		}
-
 		meshData.ProcessMesh ();
-
 		return meshData;
-
 	}
+
 }
 
 public class MeshData {
+	//Vertices for the mesh
 	Vector3[] vertices;
+	//Triangles for the mesh
 	int[] triangles;
+	//Colors for the mesh
 	Color[] colors;
+	//Baked normals for the mesh
 	Vector3[] bakedNormals;
 
+	//Vertices that are out of the mesh
 	Vector3[] outOfMeshVertices;
+	//Triangles that are out of the mesh
 	int[] outOfMeshTriangles;
 
+	//Index used for the triangles
 	int triangleIndex;
+	//Index used for the out of mesh triangles
 	int outOfMeshTriangleIndex;
 
+	//Boolean that indicate if the lightning method flatshading is in use
 	bool useFlatShading;
 
 	public MeshData(int numVertsPerLine, int skipIncrement, bool useFlatShading) {
@@ -129,6 +139,9 @@ public class MeshData {
 		outOfMeshTriangles = new int[24 * (numVertsPerLine-2)];
 	}
 
+	/***
+	Adds to the mesh a vertex to the list of vertices as well as its color.
+	***/
 	public void AddVertex(Vector3 vertexPosition, Color color, int vertexIndex) {
 		if (vertexIndex < 0) {
 			outOfMeshVertices [-vertexIndex - 1] = vertexPosition;
@@ -138,6 +151,9 @@ public class MeshData {
 		}
 	}
 
+	/***
+	Adds to the mesh a triangle to the list of triangles.
+	***/
 	public void AddTriangle(int a, int b, int c) {
 		if (a < 0 || b < 0 || c < 0) {
 			outOfMeshTriangles [outOfMeshTriangleIndex] = a;
@@ -152,8 +168,10 @@ public class MeshData {
 		}
 	}
 
+	/***
+	Calculates the normals for the mesh's vertices.
+	***/
 	Vector3[] CalculateNormals() {
-
 		Vector3[] vertexNormals = new Vector3[vertices.Length];
 		int triangleCount = triangles.Length / 3;
 		for (int i = 0; i < triangleCount; i++) {
@@ -186,16 +204,15 @@ public class MeshData {
 				vertexNormals [vertexIndexC] += triangleNormal;
 			}
 		}
-
-
 		for (int i = 0; i < vertexNormals.Length; i++) {
 			vertexNormals [i].Normalize ();
 		}
-
 		return vertexNormals;
-
 	}
 
+	/***
+	Computes the normal of a surface from the index of it's points.
+	***/
 	Vector3 SurfaceNormalFromIndices(int indexA, int indexB, int indexC) {
 		Vector3 pointA = (indexA < 0)?outOfMeshVertices[-indexA-1] : vertices [indexA];
 		Vector3 pointB = (indexB < 0)?outOfMeshVertices[-indexB-1] : vertices [indexB];
@@ -206,6 +223,9 @@ public class MeshData {
 		return Vector3.Cross (sideAB, sideAC).normalized;
 	}
 
+	/***
+	Processes the normals of the mesh considering if the lightning method flatshading is used or not.
+	***/
 	public void ProcessMesh() {
 		if (useFlatShading) {
 			FlatShading ();
@@ -214,10 +234,16 @@ public class MeshData {
 		}
 	}
 
+	/***
+	Computes the normals for the mesh's vertices.
+	***/
 	void BakeNormals() {
 		bakedNormals = CalculateNormals ();
 	}
 
+	/***
+	Computes the vertices and colors using the flatshading method.
+	***/
 	void FlatShading() {
 		Vector3[] flatShadedVertices = new Vector3[triangles.Length];
 		Color[] flatShadedUvs = new Color[triangles.Length];
@@ -232,6 +258,9 @@ public class MeshData {
 		colors = flatShadedUvs;
 	}
 
+	/***
+	Creates a mesh.
+	***/
 	public Mesh CreateMesh() {
 		Mesh mesh = new Mesh ();
 		mesh.vertices = vertices;

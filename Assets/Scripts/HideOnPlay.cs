@@ -1,15 +1,12 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class HideOnPlay : MonoBehaviour {
 
-	// Use this for initialization
+	/***
+	Hide preview Mesh in PlayMode.
+	***/
 	void Start () {
 		gameObject.SetActive (false);
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }

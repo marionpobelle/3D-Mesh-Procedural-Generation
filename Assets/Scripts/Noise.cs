@@ -3,8 +3,12 @@ using System.Collections;
 
 public static class Noise {
 
+	//Normalization mode
 	public enum NormalizeMode {Local, Global};
 
+	/***
+	Generates a noiseMap using Perlin Noise.
+	***/
 	public static float[,] GenerateNoiseMap(int mapWidth, int mapHeight, NoiseSettings settings, Vector2 sampleCentre) {
 		float[,] noiseMap = new float[mapWidth,mapHeight];
 
@@ -48,7 +52,6 @@ public static class Noise {
 					amplitude *= settings.persistance;
 					frequency *= settings.lacunarity;
 				}
-
 				if (noiseHeight > maxLocalNoiseHeight) {
 					maxLocalNoiseHeight = noiseHeight;
 				}
@@ -79,18 +82,28 @@ public static class Noise {
 [System.Serializable]
 public class NoiseSettings{
 
+	//Normalize mode
 	public Noise.NormalizeMode normalizeMode;
 
+	//Scale of the noise
 	public float scale = 50;
 
+	//Octaves of the noise
 	public int octaves = 6;
+	//Persistance of the noise
 	[Range(0,1)]
-	public float persistance = .6f;
+	public float persistance = 0.6f;
+	//Lacunarity of the noise
 	public float lacunarity = 2f;
 
+	//Seed for the noiseMap
 	public int seed;
+	//Offset of the noise
 	public Vector2 offset;
 
+	/***
+	Checks if the noiseMap setting values are valid.
+	***/
 	public void ValidateValues() {
 		scale = Mathf.Max (scale, 0.01f);
 		octaves = Mathf.Max (octaves, 1);
