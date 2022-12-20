@@ -4,7 +4,9 @@ Trashpanda Likes Flowers is a 3D world/model built with procedural generation.
 
 # Development
 
-This model was made with [Unity](https://unity.com/fr) and [Shader Graph](https://unity.com/fr/features/shader-graph).
+This model was made with [Unity](https://unity.com/fr) and [Shader Graph](https://unity.com/fr/features/shader-graph). The following videos were used as references :
+[TPLF](https://www.youtube.com/playlist?list=PL4wvE9SgBKlfxsV1upO26FrRNoomVuikC).
+
 
 # Demo
 
