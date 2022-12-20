@@ -1,6 +1,3 @@
-# TrashPandaLikesFlowers
-3D World with Procedural Generation and Shaders
-
 # Presentation
 
 Trashpanda Likes Flowers is a 3D world/model built with procedural generation.
