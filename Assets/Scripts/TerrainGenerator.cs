@@ -82,6 +82,8 @@ public class TerrainGenerator : MonoBehaviour {
 		int currentChunkCoordX = Mathf.RoundToInt (viewerPosition.x / meshWorldSize);
 		int currentChunkCoordY = Mathf.RoundToInt (viewerPosition.y / meshWorldSize);
 
+		heightMapSettings.UpdateBounds();
+
 		for (int yOffset = -chunksVisibleInViewDst; yOffset <= chunksVisibleInViewDst; yOffset++) {
 			for (int xOffset = -chunksVisibleInViewDst; xOffset <= chunksVisibleInViewDst; xOffset++) {
 				Vector2 viewedChunkCoord = new Vector2 (currentChunkCoordX + xOffset, currentChunkCoordY + yOffset);

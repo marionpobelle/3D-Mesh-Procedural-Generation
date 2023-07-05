@@ -15,17 +15,15 @@ public class HeightMapSettings : UpdatableData {
 
 	//Minimum value of height for the mesh
 	public float minHeight{
-		get{
-			return heightMultiplier * heightCurve.Evaluate(0);
-		}
-	}
+		get;
+		protected set;
+	} = 0f;
 
 	//Maximum value of height for the mesh
 	public float maxHeight{
-		get{
-			return heightMultiplier * heightCurve.Evaluate(1);
-		}
-	}
+		get;
+		protected set;
+	} = 1f;
 
 	#if UNITY_EDITOR
 
@@ -35,6 +33,12 @@ public class HeightMapSettings : UpdatableData {
 	protected override void OnValidate() {
 		noiseSettings.ValidateValues();
 		base.OnValidate ();
+	}
+
+	public void UpdateBounds()
+	{
+		minHeight = heightMultiplier * heightCurve.Evaluate(0);
+		maxHeight = heightMultiplier * heightCurve.Evaluate(1);
 	}
 
 	#endif

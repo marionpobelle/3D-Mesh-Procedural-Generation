@@ -35,6 +35,7 @@ public class MapPreview : MonoBehaviour {
 	***/
 	public void DrawMapInEditor() {
 		HeightMap heightMap = HeightMapGenerator.GenerateHeightMap (meshSettings.numVertsPerLine, meshSettings.numVertsPerLine, heightMapSettings, Vector2.zero);
+		heightMapSettings.UpdateBounds();
 		DrawMesh (MeshGenerator.GenerateTerrainMesh (heightMap.values, editorPreviewLOD, meshSettings, heightMapSettings));
 		DrawWaterInEditor(meshSettings);
 		spawnerInstance.DrawItems(Vector2.zero, this.transform);
