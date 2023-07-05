@@ -52,16 +52,7 @@ public static class MeshGenerator {
 
 					float normalizedHeight = Mathf.InverseLerp(heightMapSettings.minHeight, heightMapSettings.maxHeight, height);
 					Color color = heightMapSettings.gradient.Evaluate(normalizedHeight);
-					/***if(normalizedHeight >= 1 || normalizedHeight <= 0) {
-						Debug.Log("I");
-						Debug.Log("hate");
-						Debug.Log("you");
-						Debug.Log("threads");
-						Debug.Log("Nothing to see here");
-						Debug.Log("There is no reason these prints are here");
-						Debug.Log("I swear");
-
-					}***/
+					
 					if (isEdgeConnectionVertex) {
 						bool isVertical = x == 2 || x == numVertsPerLine - 3;
 						int dstToMainVertexA = ((isVertical)?y - 2:x-2) % skipIncrement;
