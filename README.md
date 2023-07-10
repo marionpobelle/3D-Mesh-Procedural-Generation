@@ -32,18 +32,17 @@ https://user-images.githubusercontent.com/112869026/208720393-ca75d5f7-af6c-4e68
 - - [x] Flatshading
 - - [x] Mesh coloration
 
-- [ ] IMPLEMENTATION AND DATA
+- [x] IMPLEMENTATION AND DATA
 - - [x] Optimization
 - - [x] Data storage
 - - [x] Refactoring
-- - [ ] Threading
-- - - [ ] Fix threads getting the wrong minHeight and maxHeight values due to multiple requests at the same time
+- - [x] Threading
+- - - [x] Fix threads getting the wrong minHeight and maxHeight values due to multiple requests at the same time
 
-- [ ] SKYBOX
+- [x] SKYBOX
 - - [x] Day shader
 - - [x] Night shader
 - - [x] Sun
-- - [ ] Day/Night circle
 
 - [x] WATER
 - - [x] Planes generation
