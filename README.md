@@ -11,7 +11,8 @@ The following videos were used as references :\
 
 ## Demo
 
-TO DO
+![GIF 8-12-2![GIF 8-12-2024 5-55-16 AM (1)](https://github.com/user-attachments/assets/74327b31-4b16-4711-a158-0c04b4c6977f)
+024 5-53-55 AM (1)](https://github.com/user-attachments/assets/ebb13576-d807-49d7-8eab-7032e54910a0)
 
 ## TDL
 
