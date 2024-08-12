@@ -28,7 +28,6 @@ The following videos were used as references :\
 - - [x] Data storage
 - - [x] Refactoring
 - - [x] Threading
-- - - [x] Fix threads getting the wrong minHeight and maxHeight values due to multiple requests at the same time
 
 - [x] SKYBOX
 - - [x] Day shader
