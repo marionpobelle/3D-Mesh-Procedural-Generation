@@ -11,7 +11,7 @@ The following videos were used as references :\
 
 ## Demo
 
-![GIF 8-12-2024 5-55-16 AM (1)](https://github.com/user-attachments/assets/a21fe5a8-3bdd-4180-8c27-369882f54a8d)
+![GIF 8-12-2024 5-53-55 AM (1)](https://github.com/user-attachments/assets/b8a0f139-4bae-4241-9af2-5c6cfeefb565)
 ![GIF 8-12-2024 5-55-16 AM (1)](https://github.com/user-attachments/assets/74327b31-4b16-4711-a158-0c04b4c6977f)
 
 ## TDL
